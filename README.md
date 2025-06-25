@@ -38,7 +38,7 @@ solve novel tasks from scratch, while other techniques struggle to generalize.
 In this repo, we provide Voyager code. This codebase is under [MIT License](LICENSE).
 
 # Installation
-Voyager requires Python ≥ 3.9 and Node.js ≥ 16.13.0. We have tested on Ubuntu 20.04, Windows 11, and macOS. You need to follow the instructions below to install Voyager.
+Voyager requires Python ≥ 3.9 and Node.js ≥ 22. We have tested on Ubuntu 20.04, Windows 11, and macOS. You need to follow the instructions below to install Voyager.
 
 ## Python Install
 ```
@@ -65,11 +65,7 @@ Voyager depends on Minecraft game. You need to install Minecraft game and set up
 
 Follow the instructions in [Minecraft Login Tutorial](installation/minecraft_instance_install.md) to set up your Minecraft Instance.
 
-## Fabric Mods Install
-
-You need to install fabric mods to support all the features in Voyager. Remember to use the correct Fabric version of all the mods. 
-
-Follow the instructions in [Fabric Mods Install](installation/fabric_mods_install.md) to install the mods.
+Voyager works with **Minecraft Java Edition 1.21.6** on Windows without any additional mods.  The former Fabric-based setup is optional and only needed if you want the extra features described in [Fabric Mods Install](installation/fabric_mods_install.md).
 
 # Getting Started
 Voyager uses OpenAI's GPT-4 as the language model. You need to have an OpenAI API key to use Voyager. You can get one from [here](https://platform.openai.com/account/api-keys).
@@ -83,7 +79,7 @@ azure_login = {
     "client_id": "YOUR_CLIENT_ID",
     "redirect_url": "https://127.0.0.1/auth-response",
     "secret_value": "[OPTIONAL] YOUR_SECRET_VALUE",
-    "version": "fabric-loader-0.14.18-1.19", # the version Voyager is tested on
+    "version": "1.21.6",  # Minecraft version used by Voyager
 }
 openai_api_key = "YOUR_API_KEY"
 
