@@ -1,5 +1,5 @@
 # Minecraft Instance Install
-To start using Voyager, you should first make sure to have an official [Minecraft](https://www.minecraft.net/) game (version 1.19) installed. 
+To start using Voyager, you should first make sure to have an official [Minecraft](https://www.minecraft.net/) game (version **1.21.6**) installed.
 
 There are two ways to start a Minecraft instance for Voyager. Sometimes GPT-4 will write an infinite loop that runs forever. In this case, there'll be a request timeout. Using Azure login can automatically resume the running if there's a request timeout.
 
@@ -28,7 +28,7 @@ azure_login = {
     "version": "MINECRAFT VERSION YOU WANT TO USE",
 }
 ```
-**Voyager use `fabric-loader-0.14.18-1.19` version to run all the experiments.** You may not have this version currently, you can move on to the [Fabric Mods Install](fabric_mods_install.md#fabric-mods-install) section and follow the instructions there to install the fabric version of the game.
+Voyager no longer requires Fabric to run. If you wish to use the legacy Fabric-based setup, see [Fabric Mods Install](fabric_mods_install.md#fabric-mods-install) for details.
 
 ## Option 2: Minecraft Official Launcher
 
